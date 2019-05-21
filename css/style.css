@@ -150,6 +150,44 @@ a {
   opacity: 0.5;
 }
 
+.goods-list {
+  list-style: none;
+}
+
+.goods-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.goods-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.goods-item a {
+  color: #000000;
+}
+
+.goods-item h3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.goods-item-category {
+  text-transform: none;
+}
+
+.goods-item-price b {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #e5e5e5;
+}
+
+.goods-item-price .button {
+  line-height: 20px;
+  color: #ffffff;
+}
+
 .main-footer {
   color: #ffffff;
   background: #212121 url("../img/footer-bg.jpg") 0 0 repeat;
