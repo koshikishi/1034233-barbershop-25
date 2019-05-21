@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #000000 url("img/index-bg.jpg") top center no-repeat;
+}
