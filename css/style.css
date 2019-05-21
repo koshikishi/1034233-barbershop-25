@@ -188,6 +188,33 @@ a {
   color: #ffffff;
 }
 
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: #663d15;
+}
+
+.pagination-item-active a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-item-active a:hover,
+.pagination-item-active a:focus,
+.pagination-item-active a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .main-footer {
   color: #ffffff;
   background: #212121 url("../img/footer-bg.jpg") 0 0 repeat;
