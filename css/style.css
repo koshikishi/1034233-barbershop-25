@@ -59,3 +59,11 @@ a {
   font-size: 30px;
   line-height: 42px;
 }
+
+.news-list {
+  list-style: none;
+}
+
+.news-item time {
+  text-transform: none;
+}
