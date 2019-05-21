@@ -9,6 +9,11 @@ body {
   background: #000000 url("../img/index-bg.jpg") top center no-repeat;
 }
 
+.inner-page {
+  color: #000000;
+  background: #f9f6f3 url("../img/bg.jpg") 0 0 repeat;
+}
+
 a {
   text-decoration: none;
 }
