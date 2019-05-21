@@ -98,3 +98,40 @@ a {
 .appointment-item input:focus {
   border-color: #663d15;
 }
+
+.main-footer {
+  color: #ffffff;
+  background: #212121 url("../img/footer-bg.jpg") 0 0 repeat;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
