@@ -104,6 +104,28 @@ a {
   border-color: #663d15;
 }
 
+.main-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-active {
+  color: #aba9a7;
+}
+
 .main-footer {
   color: #ffffff;
   background: #212121 url("../img/footer-bg.jpg") 0 0 repeat;
