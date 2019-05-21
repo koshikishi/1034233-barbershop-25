@@ -13,6 +13,22 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font: inherit;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #000000;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
 .main-nav {
   font-size: 16px;
   line-height: 20px;
@@ -66,4 +82,9 @@ a {
 
 .news-item time {
   text-transform: none;
+}
+
+.gallery-content {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
 }
