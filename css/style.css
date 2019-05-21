@@ -6,5 +6,33 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
-  background: #000000 url("img/index-bg.jpg") top center no-repeat;
+  background: #000000 url("../img/index-bg.jpg") top center no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.site-nav,
+.user-nav {
+  list-style: none;
+}
+
+.site-nav a,
+.user-nav a {
+  color: #ffffff;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus {
+  background-color: #242424;
 }
