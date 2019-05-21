@@ -247,6 +247,25 @@ a {
   list-style: none;
 }
 
+.price-tagline {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.price h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price ul {
+  list-style: none;
+}
+
+.price-table td:last-child {
+  text-align: center;
+}
+
 .main-footer {
   color: #ffffff;
   background: #212121 url("../img/footer-bg.jpg") 0 0 repeat;
