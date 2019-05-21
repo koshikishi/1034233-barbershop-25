@@ -215,6 +215,18 @@ a {
   background-color: #ffffff;
 }
 
+.product-photo-preview {
+  list-style: none;
+}
+
+.product-photo-preview li {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-photo-full {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
 .main-footer {
   color: #ffffff;
   background: #212121 url("../img/footer-bg.jpg") 0 0 repeat;
