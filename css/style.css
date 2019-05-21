@@ -49,3 +49,13 @@ a {
   font-size: 30px;
   line-height: 42px;
 }
+
+.index-columns {
+  color: #000000;
+  background: #f8f5f2 url("../img/bg.jpg") 0 0 repeat;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
