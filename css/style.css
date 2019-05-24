@@ -334,6 +334,10 @@ a {
   background-color: #ffffff;
 }
 
+.product-photos {
+  width: 460px;
+}
+
 .product-photo-preview {
   list-style: none;
 }
@@ -344,6 +348,10 @@ a {
 
 .product-photo-full {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  width: 390px;
 }
 
 .product-article {
