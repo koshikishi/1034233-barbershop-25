@@ -41,6 +41,11 @@ a {
   margin-bottom: 75px;
 }
 
+.inner-page .main-header {
+  margin-bottom: 50px;
+  background-color: #000000;
+}
+
 .main-nav {
   display: flex;
   flex-direction: column;
@@ -51,10 +56,22 @@ a {
   background-color: transparent;
 }
 
+.inner-page .main-nav {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 .main-header-logo {
   order: 1;
   width: 368px;
   height: 153px;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
 }
 
 .main-nav-wrap {
@@ -80,6 +97,10 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.inner-page .user-nav {
+  margin-left: auto;
 }
 
 .site-nav a,
