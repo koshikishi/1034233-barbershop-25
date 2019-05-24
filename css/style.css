@@ -119,6 +119,7 @@ a {
 .index-columns {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
   padding: 50px 80px;
   color: #000000;
   background: #f8f5f2 url("../img/bg.jpg") 0 0 repeat;
@@ -148,6 +149,14 @@ a {
 .gallery-content {
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
 }
 
 .appointment-item input {
