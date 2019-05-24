@@ -94,6 +94,10 @@ a {
   background-color: #242424;
 }
 
+.features {
+  margin-bottom: 80px;
+}
+
 .features-list {
   display: flex;
   justify-content: space-between;
@@ -113,6 +117,9 @@ a {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
   color: #000000;
   background: #f8f5f2 url("../img/bg.jpg") 0 0 repeat;
 }
@@ -122,12 +129,20 @@ a {
   line-height: 42px;
 }
 
+.news {
+  width: 380px;
+}
+
 .news-list {
   list-style: none;
 }
 
 .news-item time {
   text-transform: none;
+}
+
+.gallery {
+  width: 300px;
 }
 
 .gallery-content {
