@@ -48,7 +48,7 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: transparent;
 }
 
 .main-header-logo {
@@ -332,11 +332,19 @@ a {
 }
 
 .main-footer {
+  margin-top: 65px;
+  padding: 60px 0;
   color: #ffffff;
   background: #212121 url("../img/footer-bg.jpg") 0 0 repeat;
 }
 
+.main-footer .container {
+  display: flex;
+}
+
 .footer-contacts {
+  width: 320px;
+  margin-right: 80px;
   font-style: normal;
 }
 
@@ -351,6 +359,7 @@ a {
 }
 
 .footer-social {
+  width: 145px;
   text-align: center;
 }
 
@@ -363,6 +372,9 @@ a {
 }
 
 .footer-copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
   text-align: center;
 }
 
