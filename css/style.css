@@ -389,6 +389,14 @@ a {
   list-style: none;
 }
 
+.price-column {
+  width: 460px;
+}
+
+.price-column:first-child {
+  width: 390px;
+}
+
 .price-table td:last-child {
   text-align: center;
 }
