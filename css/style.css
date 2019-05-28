@@ -512,19 +512,41 @@ img {
 }
 
 .goods-item a {
+  display: flex;
+  flex-direction: column;
   color: #000000;
 }
 
 .goods-item h3 {
+  order: 1;
+  margin-top: 17px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  margin-left: 16px;
   font-size: 14px;
   line-height: 18px;
 }
 
 .goods-item-category {
+  display: block;
   text-transform: none;
 }
 
+.goods-item-image {
+  width: 220px;
+  height: 165px;
+  margin: 0;
+}
+
+.goods-item-price {
+  display: flex;
+  margin: 15px;
+  margin-top: 0;
+}
+
 .goods-item-price b {
+  width: 112px;
+  padding: 13px 25px 11px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -532,6 +554,10 @@ img {
 }
 
 .goods-item-price .button {
+  width: 50px;
+  min-width: auto;
+  margin-right: 0;
+  padding: 13px 18px 11px;
   line-height: 20px;
   color: #ffffff;
 }
