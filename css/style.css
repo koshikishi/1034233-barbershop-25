@@ -28,6 +28,10 @@ img {
 }
 
 .button {
+  display: inline-block;
+  min-width: 100px;
+  margin-right: 16px;
+  padding: 10px 20px;
   font: inherit;
   vertical-align: middle;
   text-align: center;
@@ -35,12 +39,19 @@ img {
   text-transform: uppercase;
   background-color: #000000;
   border: none;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
   background-color: #663d15;
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000000;
 }
 
 .main-header {
@@ -194,10 +205,17 @@ img {
   margin-bottom: 35px;
   padding: 50px 80px;
   color: #000000;
-  background: #f8f5f2 url("../img/bg.jpg") 0 0 repeat;
+  background-color: #f8f5f2;
+  background-image:
+    url("../img/line.png"),
+    url("../img/bg.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center, 0 0;
 }
 
 .index-columns h2 {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -207,7 +225,18 @@ img {
 }
 
 .news-list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
   list-style: none;
+}
+
+.news-item {
+  margin-bottom: 25px;
+}
+
+.news-item p {
+  margin: 0;
 }
 
 .news-item time {
@@ -219,8 +248,27 @@ img {
 }
 
 .gallery-content {
+  height: 164px;
+  margin: 0;
+  margin-bottom: 38px;
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-button {
+  box-sizing: border-box;
+  width: 140px;
+  margin: 0;
 }
 
 .contacts {
