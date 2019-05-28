@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .button {
   font: inherit;
   vertical-align: middle;
@@ -494,4 +499,17 @@ a {
 .restore:hover,
 .restore:focus {
   text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
 }
