@@ -339,10 +339,33 @@ img {
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
   list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 42px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -25px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
 }
 
 .breadcrumbs a {
@@ -356,6 +379,10 @@ img {
 
 .breadcrumbs-active {
   color: #aba9a7;
+}
+
+.breadcrumbs-active::after {
+  display: none;
 }
 
 .catalog-columns {
