@@ -1,4 +1,5 @@
 body {
+  min-width: 960px;
   margin: 0;
   font: bold 14px/24px "PT Sans Narrow", "Arial", sans-serif;
   color: #ffffff;
@@ -91,6 +92,8 @@ img {
 }
 
 .site-nav {
+  display: flex;
+  flex-wrap: wrap;
   width: 620px;
   margin: 0;
   padding: 0;
@@ -98,7 +101,8 @@ img {
 }
 
 .user-nav {
-  width: 140px;
+  display: flex;
+  max-width: 140px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -110,6 +114,8 @@ img {
 
 .site-nav a,
 .user-nav a {
+  display: block;
+  padding: 25px 20px;
   color: #ffffff;
 }
 
@@ -118,6 +124,28 @@ img {
 .user-nav a:hover,
 .user-nav a:focus {
   background-color: #242424;
+}
+
+.user-nav .login-link {
+  position: relative;
+  padding-left: 50px;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  width: 16px;
+  height: 18px;
+  background: url("../img/login-icon.svg") 0 0 no-repeat;
+  opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+  opacity: 1;
 }
 
 .features {
