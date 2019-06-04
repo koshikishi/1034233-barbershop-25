@@ -171,21 +171,26 @@
       <p>Введите пожалуйста свой логин и пароль</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
-          <input class="login-icon-user" type="text" name="login" placeholder="Логин" aria-label="Логин">
+          <label class="visually-hidden" for="login-user">Логин</label>
+          <input class="login-icon-user" id="login-user" type="text" name="login" placeholder="Логин">
         </div>
         <div>
-          <input class="login-icon-password" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
+          <label class="visually-hidden" for="password-user">Пароль</label>
+          <input class="login-icon-password" id="password-user" type="password" name="password" placeholder="Пароль">
         </div>
         <div class="login-password-info">
           <label class="login-checkbox">
-            <input type="checkbox" name="remember">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
             Запомните меня
           </label>
           <a class="restore" href="#">Я забыл пароль!</a>
         </div>
         <button class="button" type="submit">Войти</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
 
     <section class="modal modal-map">
@@ -193,7 +198,9 @@
       <div>
         <img src="img/modal-map.png" alt="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" width="766" height="560">
       </div>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>

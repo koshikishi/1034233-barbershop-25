@@ -835,17 +835,43 @@ img {
 }
 
 .modal {
+  position: fixed;
   color: #000000;
   background: #f8f3f0 url("../img/bg.jpg") 0 0 repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.modal h2 {
+.modal-login {
+  top: 120px;
+  left: 50%;
+  display: none;
+  width: 300px;
+  padding: 50px 80px;
+  transform: translateX(-50%);
+}
+
+.modal-login h2 {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 42px;
 }
 
+.modal-login p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-form div {
+  margin-bottom: 10px;
+}
+
 .login-form input[type="text"],
 .login-form input[type="password"] {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px 15px;
+  padding-right: 40px;
   font: inherit;
   color: #000000;
   text-transform: uppercase;
@@ -857,9 +883,64 @@ img {
   border-color: #663d15;
 }
 
+.login-icon-user {
+  background: url("../img/modal-user-icon.svg") 270px center no-repeat;
+}
+
+.login-icon-password {
+  background: url("../img/modal-lock-icon.svg") 270px center no-repeat;
+}
+
+.login-password-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
 .login-checkbox:hover,
 .login-checkbox:focus {
   color: #663d15;
+}
+
+.login-checkbox input + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+}
+
+.login-checkbox input:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-checkbox input:checked + .checkbox-indicator::before,
+.login-checkbox input:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.login-checkbox input:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
 }
 
 .restore {
@@ -870,6 +951,41 @@ img {
 .restore:hover,
 .restore:focus {
   text-decoration: none;
+}
+
+.login-form .button {
+  width: 100%;
+  margin-right: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 .visually-hidden {
