@@ -1,5 +1,3 @@
-'use strict';
-
 var loginLink = document.querySelector('.login-link');
 
 var modalLogin = document.querySelector('.modal-login');
@@ -63,8 +61,42 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-overlay.addEventListener('click', function () {
-  modalLogin.classList.remove('modal-shown');
-  modalLogin.classList.remove('modal-error');
+var mapLink = document.querySelector('.button-map');
+
+var modalMap = document.querySelector('.modal-map');
+var modalMapClose = modalMap.querySelector('.modal-close');
+
+mapLink.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalMap.classList.add('modal-shown');
+  overlay.classList.add('overlay-shown');
+});
+
+modalMapClose.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalMap.classList.remove('modal-shown');
   overlay.classList.remove('overlay-shown');
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (modalMap.classList.contains('modal-shown')) {
+      modalMap.classList.remove('modal-shown');
+      overlay.classList.remove('overlay-shown');
+    }
+  }
+});
+
+overlay.addEventListener('click', function () {
+  if (modalLogin.classList.contains('modal-shown')) {
+    modalLogin.classList.remove('modal-shown');
+    modalLogin.classList.remove('modal-error');
+    overlay.classList.remove('overlay-shown');
+  }
+
+  if (modalMap.classList.contains('modal-shown')) {
+    modalMap.classList.remove('modal-shown');
+    overlay.classList.remove('overlay-shown');
+  }
 });

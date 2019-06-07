@@ -1161,6 +1161,19 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.modal-map div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
 .overlay {
   position: fixed;
   top: 0;
