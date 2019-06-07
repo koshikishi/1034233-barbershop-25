@@ -3,6 +3,7 @@
 var loginLink = document.querySelector('.login-link');
 
 var modalLogin = document.querySelector('.modal-login');
+var overlay = document.querySelector('.overlay');
 var modalLoginClose = modalLogin.querySelector('.modal-close');
 
 var loginForm = modalLogin.querySelector('.login-form');
@@ -21,6 +22,7 @@ try {
 loginLink.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalLogin.classList.add('modal-shown');
+  overlay.classList.add('overlay-shown');
 
   if (storage) {
     userLogin.value = storage;
@@ -33,11 +35,16 @@ loginLink.addEventListener('click', function (evt) {
 modalLoginClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalLogin.classList.remove('modal-shown');
+  modalLogin.classList.remove('modal-error');
+  overlay.classList.remove('overlay-shown');
 });
 
 loginForm.addEventListener('submit', function (evt) {
   if (!userLogin.value || !userPassword.value) {
     evt.preventDefault();
+    modalLogin.classList.remove('modal-error');
+    modalLogin.offsetWidth = modalLogin.offsetWidth;
+    modalLogin.classList.add('modal-error');
   } else {
     if (isStorageSupport) {
       localStorage.setItem('login', userLogin.value);
@@ -50,6 +57,14 @@ window.addEventListener('keydown', function (evt) {
     evt.preventDefault();
     if (modalLogin.classList.contains('modal-shown')) {
       modalLogin.classList.remove('modal-shown');
+      modalLogin.classList.remove('modal-error');
+      overlay.classList.remove('overlay-shown');
     }
   }
+});
+
+overlay.addEventListener('click', function () {
+  modalLogin.classList.remove('modal-shown');
+  modalLogin.classList.remove('modal-error');
+  overlay.classList.remove('overlay-shown');
 });

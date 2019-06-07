@@ -955,6 +955,39 @@ img {
   background-color: #ffffff;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -1000px);
+  }
+
+  70% {
+    transform: translate(-50%, 30px);
+  }
+
+  90% {
+    transform: translate(-50%, -10px);
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  25% {
+    transform: translateX(calc(-50% - 10px));
+  }
+
+  75% {
+    transform: translateX(calc(-50% + 10px));
+  }
+}
+
 .modal {
   position: fixed;
   z-index: 2;
@@ -966,6 +999,11 @@ img {
 
 .modal-shown {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.12s 5;
 }
 
 .modal-login {
@@ -1132,6 +1170,10 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay-shown {
+  display: block;
 }
 
 .visually-hidden {
